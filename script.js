@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     initStatsAnimation();
     initScrollAnimations();
     initMobileMenu();
+    initTypingEffect();
+    initParallaxEffect();
+    addScrollToTop();
 });
 
 // Navbar functionality
@@ -182,36 +185,7 @@ function initParallaxEffect() {
     });
 }
 
-// Add loading animation
-function initLoadingAnimation() {
-    const loader = document.createElement('div');
-    loader.className = 'page-loader';
-    loader.innerHTML = `
-        <div class="loader-content">
-            <div class="loader-spinner"></div>
-            <p>Loading...</p>
-        </div>
-    `;
-    
-    document.body.appendChild(loader);
-    
-    // Remove loader after page loads
-    window.addEventListener('load', function() {
-        setTimeout(() => {
-            loader.style.opacity = '0';
-            setTimeout(() => {
-                loader.remove();
-            }, 500);
-        }, 1000);
-    });
-}
-
-// Initialize additional features
-document.addEventListener('DOMContentLoaded', function() {
-    initTypingEffect();
-    initParallaxEffect();
-    initLoadingAnimation();
-});
+// Removed loading animation for faster site load
 
 // Add CSS for animations
 const style = document.createElement('style');
@@ -240,40 +214,6 @@ style.textContent = `
         transition: transform 0.3s ease, background 0.3s ease;
     }
     
-    .page-loader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: var(--primary-black);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease;
-    }
-    
-    .loader-content {
-        text-align: center;
-        color: var(--text-white);
-    }
-    
-    .loader-spinner {
-        width: 50px;
-        height: 50px;
-        border: 3px solid var(--royal-blue);
-        border-top: 3px solid var(--accent-yellow);
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin: 0 auto 1rem;
-    }
-    
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -292,6 +232,14 @@ style.textContent = `
     
     .mobile-menu-btn i {
         transition: transform 0.3s ease;
+    }
+    
+    .nav-links a.active {
+        color: var(--accent-yellow);
+    }
+    
+    .nav-links a.active::after {
+        width: 100%;
     }
 `;
 
@@ -354,5 +302,92 @@ function addScrollToTop() {
     });
 }
 
-// Initialize scroll to top button
-document.addEventListener('DOMContentLoaded', addScrollToTop);
+// Add project card hover effects
+function initProjectCardEffects() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            // Add subtle tilt effect
+            this.style.transform = 'translateY(-15px) scale(1.02) rotateX(2deg)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1) rotateX(0)';
+        });
+        
+        // Add parallax effect to card content
+        card.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            this.style.transform = `translateY(-15px) scale(1.02) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+    });
+}
+
+// Add skills section animations
+function initSkillsAnimations() {
+    const skillCategories = document.querySelectorAll('.skill-category');
+    
+    skillCategories.forEach((category, index) => {
+        category.style.animationDelay = `${index * 0.1}s`;
+    });
+}
+
+// Add active navigation highlight
+function initActiveNavigation() {
+    const sections = document.querySelectorAll('.section, .hero');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (window.pageYOffset >= sectionTop - 200) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+}
+
+// Add tooltip functionality for tech tags
+function initTechTagTooltips() {
+    const techTags = document.querySelectorAll('.tech-tag');
+    
+    techTags.forEach(tag => {
+        tag.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-3px) scale(1.05)';
+        });
+        
+        tag.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+}
+
+// Initialize all new features
+document.addEventListener('DOMContentLoaded', function() {
+    initProjectCardEffects();
+    initSkillsAnimations();
+    initActiveNavigation();
+    initTechTagTooltips();
+    addScrollToTop();
+});
