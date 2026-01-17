@@ -2,477 +2,483 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Tahir | Creative Full Stack Engineer</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Tahir</title>
 
-    <!-- Custom Configuration -->
-    <script src="script.js"></script>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon - Modern code icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512' fill='%233b82f6'><path d='M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z'/></svg>" type="image/svg+xml">
+
+  <!-- Custom Configuration -->
+  <script src="script.js"></script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="text-slate-300 font-sans antialiased selection:bg-pink-500 selection:text-white">
 
-    <!-- The Living Background -->
-    <div class="aurora-bg">
-        <div class="aurora-blob blob-1"></div>
-        <div class="aurora-blob blob-2"></div>
-        <div class="aurora-blob blob-3"></div>
+  <!-- The Living Background -->
+  <div class="aurora-bg">
+    <div class="aurora-blob blob-1"></div>
+    <div class="aurora-blob blob-2"></div>
+    <div class="aurora-blob blob-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 transition-all duration-300 glass-panel border-b-0" id="navbar">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold tracking-tight text-white group">
+          Ali<span class="text-cyan-400 group-hover:animate-pulse">.</span>Dev
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="#about" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
+            About
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
+          </a>
+          <a href="#toolkit" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
+            Toolkit
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
+          </a>
+          <a href="#projects" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
+            Projects
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
+          </a>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="hidden md:block">
+          <a href="mailto:alirehmani673@outlook.com" class="relative inline-flex group">
+            <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+            <button class="relative inline-flex items-center justify-center px-6 py-2 text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+              Let's Talk
+            </button>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 transition-all duration-300 glass-panel border-b-0" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="#" class="text-2xl font-bold tracking-tight text-white group">
-                    Ali<span class="text-cyan-400 group-hover:animate-pulse">.</span>Dev
-                </a>
+    <!-- Mobile Menu -->
+    <div class="md:hidden hidden bg-dark-900/95 backdrop-blur-xl border-t border-white/10" id="mobile-menu">
+      <div class="px-6 py-4 space-y-4">
+        <a href="#about" class="block text-base font-medium text-white hover:text-cyan-400">About</a>
+        <a href="#toolkit" class="block text-base font-medium text-white hover:text-cyan-400">Toolkit</a>
+        <a href="#projects" class="block text-base font-medium text-white hover:text-cyan-400">Projects</a>
+      </div>
+    </div>
+  </nav>
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
-                        About
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
-                    </a>
-                    <a href="#toolkit" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
-                        Toolkit
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
-                    </a>
-                    <a href="#projects" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
-                        Projects
-                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
-                    </a>
-                </div>
-
-                <!-- CTA Button -->
-                <div class="hidden md:block">
-                    <a href="mailto:alirehmani673@outlook.com" class="relative inline-flex group">
-                        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-                        <button class="relative inline-flex items-center justify-center px-6 py-2 text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                            Let's Talk
-                        </button>
-                    </a>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="home">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Text Content -->
+        <div class="order-2 lg:order-1 reveal active">
+          <div class="inline-flex items-center px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-8 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 mr-2 animate-pulse"></span>
+            Open to Opportunities
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+            Building Ideas <br>
+            <span class="text-gradient">Into Reality.</span>
+          </h1>
+          <p class="text-lg text-slate-300 mb-8 max-w-lg leading-relaxed font-light">
+            Hi, I'm <strong class="text-white">Ali Tahir</strong>. I build fast and reliable Console-base Projects using <span class="text-cyan-400">C++</span>, and create modern websites with the <span class="text-purple-400">MERN stack</span>. Two different worlds, one goal — clean, working code.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="px-8 py-3.5 bg-white text-dark-900 font-bold rounded-full hover:bg-cyan-50 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+              Explore My Work
+            </a>
+            <a href="https://github.com/Ali1180-uni" target="_blank" class="px-8 py-3.5 border border-white/20 hover:border-white/50 hover:bg-white/10 text-white font-medium rounded-full transition-all duration-300 flex items-center gap-2 backdrop-blur-sm">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-dark-900/95 backdrop-blur-xl border-t border-white/10" id="mobile-menu">
-            <div class="px-6 py-4 space-y-4">
-                <a href="#about" class="block text-base font-medium text-white hover:text-cyan-400">About</a>
-                <a href="#toolkit" class="block text-base font-medium text-white hover:text-cyan-400">Toolkit</a>
-                <a href="#projects" class="block text-base font-medium text-white hover:text-cyan-400">Projects</a>
+        <!-- Visual -->
+        <div class="order-1 lg:order-2 flex justify-center reveal delay-200">
+          <div class="relative w-72 h-72 lg:w-96 lg:h-96 animate-float">
+            <!-- Decorative spinning rings -->
+            <div class="absolute inset-0 border-2 border-cyan-500/30 rounded-full animate-spin-slow" style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;"></div>
+            <div class="absolute inset-4 border-2 border-purple-500/30 rounded-full animate-spin-slow" style="animation-direction: reverse; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;"></div>
+
+            <!-- Image Container -->
+            <div id="dp" class="absolute inset-8 rounded-full overflow-hidden shadow-2xl shadow-cyan-500/20 border-4 border-white/10 glass-panel">
+              <img src="pic.png" onerror="this.src='https://ui-avatars.com/api/?name=Ali+Tahir&background=0f172a&color=fff&size=512'" alt="Ali Tahir" class="w-full h-full object-cover">
             </div>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="home">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Text Content -->
-                <div class="order-2 lg:order-1 reveal active">
-                    <div class="inline-flex items-center px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-8 backdrop-blur-md">
-                        <span class="w-2 h-2 rounded-full bg-cyan-400 mr-2 animate-pulse"></span>
-                        Open to Opportunities
-                    </div>
-                    <h1 class="text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
-                        Coding with <br>
-                        <span class="text-gradient">Passion & Precision.</span>
-                    </h1>
-                    <p class="text-lg text-slate-300 mb-8 max-w-lg leading-relaxed font-light">
-                        Hi, I'm <strong class="text-white">Ali Tahir</strong>. I've 1.5+ years of hands-on experience in C++, Web Development, and Database Management. Enjoys turning ideas into functional projects with clean code and a focus on user experience <span class="text-cyan-400 italic">wow</span>.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="#projects" class="px-8 py-3.5 bg-white text-dark-900 font-bold rounded-full hover:bg-cyan-50 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-                            Explore My Work
-                        </a>
-                        <a href="https://github.com/Ali1180-uni" target="_blank" class="px-8 py-3.5 border border-white/20 hover:border-white/50 hover:bg-white/10 text-white font-medium rounded-full transition-all duration-300 flex items-center gap-2 backdrop-blur-sm">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
+  <!-- About Section -->
+  <section id="about" class="py-24 relative">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+      <h2 class="text-3xl lg:text-4xl font-bold text-white mb-8">About Me</h2>
+      <div class="glass-panel p-8 md:p-12 rounded-3xl relative overflow-hidden">
+        <!-- Decor -->
+        <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
 
-                <!-- Visual -->
-                <div class="order-1 lg:order-2 flex justify-center reveal delay-200">
-                    <div class="relative w-72 h-72 lg:w-96 lg:h-96 animate-float">
-                        <!-- Decorative spinning rings -->
-                        <div class="absolute inset-0 border-2 border-cyan-500/30 rounded-full animate-spin-slow" style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;"></div>
-                        <div class="absolute inset-4 border-2 border-purple-500/30 rounded-full animate-spin-slow" style="animation-direction: reverse; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;"></div>
-                        
-                        <!-- Image Container -->
-                        <div class="absolute inset-8 rounded-full overflow-hidden shadow-2xl shadow-cyan-500/20 border-4 border-white/10 glass-panel">
-                            <img src="pic.png" onerror="this.src='https://ui-avatars.com/api/?name=Ali+Tahir&background=0f172a&color=fff&size=512'" alt="Ali Tahir" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p class="text-slate-300 text-lg leading-relaxed mb-0 relative z-10">
+          I'm a Software Engineering student at National Textile University with over <span class="text-cyan-400 font-semibold">2 years</span> of practical experience. I work on two main areas: <span class="text-purple-400 font-semibold">C++ programming</span> for building fast Console-base Projects and solving problems, and <span class="text-pink-400 font-semibold">Web Development</span> using the MERN stack (MongoDB, Express, React, Node.js) to create modern websites.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+          <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-2">2</div>
+          <div class="text-sm text-slate-400">Years Exp.</div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-24 relative">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
-            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-8">Behind the Code</h2>
-            <div class="glass-panel p-8 md:p-12 rounded-3xl relative overflow-hidden">
-                <!-- Decor -->
-                <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
-                
-                <p class="text-slate-300 text-lg leading-relaxed mb-0 relative z-10">
-                    I’m a Software Engineering student at National Textile University with over <span class="text-cyan-400 font-semibold">1.5 years</span> of hands-on experience. I don't just write code; I craft solutions. Whether it's optimizing a C++ algorithm for speed or designing a responsive MERN dashboard, I aim for that perfect balance of <span class="text-purple-400 font-semibold">efficiency</span> and <span class="text-pink-400 font-semibold">aesthetics</span>.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
-                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-2">1.5+</div>
-                    <div class="text-sm text-slate-400">Years Exp.</div>
-                </div>
-                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
-                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 mb-2">8+</div>
-                    <div class="text-sm text-slate-400">Projects</div>
-                </div>
-                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
-                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 mb-2">15+</div>
-                    <div class="text-sm text-slate-400">Tech Stack</div>
-                </div>
-                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
-                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500 mb-2">100+</div>
-                    <div class="text-sm text-slate-400">Hours Coding</div>
-                </div>
-            </div>
+        <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+          <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 mb-2">8+</div>
+          <div class="text-sm text-slate-400">Projects</div>
         </div>
-    </section>
-
-    <!-- Toolkit Section -->
-    <section id="toolkit" class="py-24 relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">My Arsenal</h2>
-                <p class="text-slate-400">Tools I use to bring ideas to life.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Frontend -->
-                <div class="glass-panel p-8 rounded-3xl reveal hover:-translate-y-2 transition-all duration-300">
-                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
-                        <i class="fas fa-layer-group text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-6">Frontend</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">React.js</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">EJS</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Bootstrap</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Quill.js</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">HTML/CSS</span>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="glass-panel p-8 rounded-3xl reveal delay-100 hover:-translate-y-2 transition-all duration-300">
-                    <div class="w-14 h-14 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 text-green-400 shadow-[0_0_15px_rgba(34,197,94,0.2)]">
-                        <i class="fas fa-server text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-6">Backend</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Node.js</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Express</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Socket.io</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Passport.js</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">REST API</span>
-                    </div>
-                </div>
-
-                <!-- Core & DevOps -->
-                <div class="glass-panel p-8 rounded-3xl reveal delay-200 hover:-translate-y-2 transition-all duration-300">
-                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 text-purple-400 shadow-[0_0_15px_rgba(168,85,247,0.2)]">
-                        <i class="fas fa-cube text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-6">Core & DevOps</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">C++</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Docker</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">MongoDB</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">SQL</span>
-                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Git</span>
-                    </div>
-                </div>
-            </div>
+        <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+          <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 mb-2">15+</div>
+          <div class="text-sm text-slate-400">Tech Stack</div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="py-24 relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Featured Projects</h2>
-                <p class="text-slate-400">Innovation in every repository.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Project: Mini Chat (NEW) -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-cyan-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-comments text-3xl text-cyan-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://github.com/Ali1180-uni/Mini-Chat-web-Application.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Real-Time Chat App</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            A high-performance messaging platform engineered with <span class="text-white">Socket.io</span> for instant bi-directional communication. Features a reactive React frontend and a robust Node.js backend.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-cyan-500">#Socket.io</span>
-                            <span class="text-xs font-bold text-cyan-500">#React</span>
-                            <span class="text-xs font-bold text-cyan-500">#Node</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project: Github Crawler (NEW) -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-file-word text-3xl text-blue-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://github.com/Ali1180-uni/Github-to-docx.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">GitHub to Docx Automation</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            A smart Python crawler that recursively scans GitHub repositories to collect C++ files and auto-generates formatted Word reports. A lifesaver for student lab reports.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-blue-500">#Python</span>
-                            <span class="text-xs font-bold text-blue-500">#Automation</span>
-                            <span class="text-xs font-bold text-blue-500">#Crawler</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project: Ali's Quran Site -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-emerald-400 to-green-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-book-quran text-3xl text-emerald-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://github.com/Ali1180-uni/Ali-s-Quran-Site.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
-                                <a href="https://ali1180-uni.github.io/Ali-s-Quran-Site/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Ali's Quran Site</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            A comprehensive verse finder app with audio recitation, translations, and beautiful Arabic typography. Built with vanilla JS and external APIs.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-emerald-500">#API</span>
-                            <span class="text-xs font-bold text-emerald-500">#JS</span>
-                            <span class="text-xs font-bold text-emerald-500">#Audio</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project: C++ Games -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-purple-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-gamepad text-3xl text-purple-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
-                                <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">C++ Games Collection</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            A suite of console-based games (Word Scramble, Sequence Sort) demonstrating advanced OOP concepts and efficient memory management in C++.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-purple-500">#C++</span>
-                            <span class="text-xs font-bold text-purple-500">#OOP</span>
-                            <span class="text-xs font-bold text-purple-500">#Logic</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project: Simon Game (Restored) -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-yellow-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-brain text-3xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://github.com/Ali1180-uni/Simon-Game-By-Ali.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
-                                <a href="http://ali1180-uni.github.io/Simon-Game-By-Ali/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">Simon Game</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            A classic Simon memory game built with vanilla JavaScript. Features progressive difficulty, high score tracking, smooth DOM animations, and engaging sound effects.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-yellow-500">#DOM</span>
-                            <span class="text-xs font-bold text-yellow-500">#JS</span>
-                            <span class="text-xs font-bold text-yellow-500">#Game</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project: Pharmacy -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-red-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-red-400 to-orange-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-capsules text-3xl text-red-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-download text-white"></i></a>
-                                <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">Pharmacy Manager</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Desktop application for inventory and sales tracking. Built with C#, WinForms and MySQL, featuring robust CRUD operations and reporting.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-red-500">#C#</span>
-                            <span class="text-xs font-bold text-red-500">#MySQL</span>
-                            <span class="text-xs font-bold text-red-500">#Desktop</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project: University Info (Restored) -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-indigo-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-indigo-400 to-purple-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-graduation-cap text-3xl text-indigo-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://github.com/Ali1180-uni/University-info.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
-                                <a href="https://github.com/Ali1180-uni/University-info.git#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-book text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">University Info Search</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            A sleek web app for searching universities worldwide using the Hipolabs API. Features live search, modern UI animations, and Axios integration.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-indigo-500">#Bootstrap</span>
-                            <span class="text-xs font-bold text-indigo-500">#Axios</span>
-                            <span class="text-xs font-bold text-indigo-500">#API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project: Chrome Ext -->
-                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-teal-500/50 transition-all duration-500 reveal">
-                    <div class="h-2 bg-gradient-to-r from-teal-400 to-emerald-500"></div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-6">
-                            <i class="fas fa-puzzle-piece text-3xl text-teal-400 mb-4 group-hover:scale-110 transition-transform"></i>
-                            <div class="flex gap-3">
-                                <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
-                                <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion/tree/main/Quran%20Reminder#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-book text-white"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">Quran Reminder Ext.</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            A Chrome extension delivering random verses on click. Features trilingual support (Arabic, Urdu, English) and an elegant dark mode UI.
-                        </p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-bold text-teal-500">#Chrome</span>
-                            <span class="text-xs font-bold text-teal-500">#Extension</span>
-                            <span class="text-xs font-bold text-teal-500">#V3</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+          <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500 mb-2">100+</div>
+          <div class="text-sm text-slate-400">Hours Coding</div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="relative border-t border-white/10 bg-dark-900 pt-16 pb-8 overflow-hidden">
-        <!-- Glow effect in footer -->
-        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-500/20 rounded-full blur-[100px]"></div>
-        
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
-                <div class="text-center md:text-left">
-                    <h2 class="text-2xl font-bold text-white mb-2">Let's build something epic.</h2>
-                    <p class="text-slate-400">Available for hire and open source collaborations.</p>
-                </div>
-                <div class="flex gap-4">
-                    <a href="https://www.linkedin.com/in/ali-tahir-766219335" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-cyan-500/20">
-                        <i class="fab fa-linkedin-in text-lg"></i>
-                    </a>
-                    <a href="https://github.com/Ali1180-uni" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-purple-500 hover:border-purple-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-purple-500/20">
-                        <i class="fab fa-github text-lg"></i>
-                    </a>
-                    <a href="mailto:alirehmani673@outlook.com" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-pink-500 hover:border-pink-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-pink-500/20">
-                        <i class="fas fa-envelope text-lg"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-                <p>&copy; 2025 Ali Tahir. All rights reserved.</p>
-                <p>Designed with <span class="text-red-500">♥</span> & Code.</p>
-            </div>
+  <!-- Toolkit Section -->
+  <section id="toolkit" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">My Skills</h2>
+        <p class="text-slate-400">Technologies I use to build projects.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Frontend -->
+        <div class="glass-panel p-8 rounded-3xl reveal hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
+            <i class="fas fa-layer-group text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-6">Frontend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">React.js</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">EJS</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Bootstrap</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Quill.js</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">HTML/CSS</span>
+          </div>
         </div>
-    </footer>
 
-    <!-- Logic -->
-    <script>
-        // Mobile Menu
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
-        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        <!-- Backend -->
+        <div class="glass-panel p-8 rounded-3xl reveal delay-100 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 text-green-400 shadow-[0_0_15px_rgba(34,197,94,0.2)]">
+            <i class="fas fa-server text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-6">Backend</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Node.js</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Express</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Socket.io</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Passport.js</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">REST API</span>
+          </div>
+        </div>
 
-        // Scroll Reveal Animation using Intersection Observer
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
+        <!-- Core & DevOps -->
+        <div class="glass-panel p-8 rounded-3xl reveal delay-200 hover:-translate-y-2 transition-all duration-300">
+          <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 text-purple-400 shadow-[0_0_15px_rgba(168,85,247,0.2)]">
+            <i class="fas fa-cube text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-6">Core & DevOps</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">C++</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Docker</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">MongoDB</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">SQL</span>
+            <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Featured Projects</h2>
+        <p class="text-slate-400">Some of my best work so far.</p>
+      </div>
 
-        // Navbar Blur Effect on Scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
-            if (window.scrollY > 20) {
-                nav.classList.add('shadow-lg');
-                nav.classList.replace('bg-transparent', 'bg-dark-900/80');
-            } else {
-                nav.classList.remove('shadow-lg');
-                nav.classList.replace('bg-dark-900/80', 'bg-transparent');
-            }
-        });
-    </script>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Project: Mini Chat (NEW) -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-cyan-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-comments text-3xl text-cyan-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://github.com/Ali1180-uni/Mini-Chat-web-Application.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Real-Time Chat App</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A live messaging app built with <span class="text-white">Socket.io</span> for instant communication. Uses React for the frontend and Node.js for the backend.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-cyan-500">#Socket.io</span>
+              <span class="text-xs font-bold text-cyan-500">#React</span>
+              <span class="text-xs font-bold text-cyan-500">#Node</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Github Crawler (NEW) -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-file-word text-3xl text-blue-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://github.com/Ali1180-uni/Github-to-docx.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">GitHub to Docx Tool</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A Python tool that downloads C++ files from GitHub repositories and creates Word documents automatically. Very useful for making lab reports quickly.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-blue-500">#Python</span>
+              <span class="text-xs font-bold text-blue-500">#Automation</span>
+              <span class="text-xs font-bold text-blue-500">#Crawler</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Ali's Quran Site -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-emerald-400 to-green-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-book-quran text-3xl text-emerald-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://github.com/Ali1180-uni/Ali-s-Quran-Site.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                <a href="https://ali1180-uni.github.io/Ali-s-Quran-Site/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Ali's Quran Site</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A comprehensive verse finder app with audio recitation, translations, and beautiful Arabic typography. Built with vanilla JS and external APIs.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-emerald-500">#API</span>
+              <span class="text-xs font-bold text-emerald-500">#JS</span>
+              <span class="text-xs font-bold text-emerald-500">#Audio</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: C++ Games -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-purple-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-gamepad text-3xl text-purple-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">C++ Games Collection</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A set of console games (Word Scramble, Sequence Sort) made with C++. Shows my skills in Object-Oriented Programming and memory handling.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-purple-500">#C++</span>
+              <span class="text-xs font-bold text-purple-500">#OOP</span>
+              <span class="text-xs font-bold text-purple-500">#Logic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Simon Game (Restored) -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-yellow-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-brain text-3xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://github.com/Ali1180-uni/Simon-Game-By-Ali.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                <a href="http://ali1180-uni.github.io/Simon-Game-By-Ali/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">Simon Game</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A memory game built with plain JavaScript. Has increasing difficulty levels, high score saving, smooth animations, and fun sound effects.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-yellow-500">#DOM</span>
+              <span class="text-xs font-bold text-yellow-500">#JS</span>
+              <span class="text-xs font-bold text-yellow-500">#Game</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Pharmacy -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-red-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-red-400 to-orange-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-capsules text-3xl text-red-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-download text-white"></i></a>
+                <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">Pharmacy Manager</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A desktop app for managing medicine stock and sales. Made with C#, WinForms and MySQL database with full add, edit, delete features.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-red-500">#C#</span>
+              <span class="text-xs font-bold text-red-500">#MySQL</span>
+              <span class="text-xs font-bold text-red-500">#Desktop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: University Info (Restored) -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-indigo-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-indigo-400 to-purple-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-graduation-cap text-3xl text-indigo-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://github.com/Ali1180-uni/University-info.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                <a href="https://github.com/Ali1180-uni/University-info.git#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-book text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">University Info Search</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A web app to search universities around the world using the Hipolabs API. Has live search feature and clean design with Axios for API calls.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-indigo-500">#Bootstrap</span>
+              <span class="text-xs font-bold text-indigo-500">#Axios</span>
+              <span class="text-xs font-bold text-indigo-500">#API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Chrome Ext -->
+        <div class="glass-panel rounded-2xl overflow-hidden group hover:border-teal-500/50 transition-all duration-500 reveal">
+          <div class="h-2 bg-gradient-to-r from-teal-400 to-emerald-500"></div>
+          <div class="p-8">
+            <div class="flex justify-between items-start mb-6">
+              <i class="fas fa-puzzle-piece text-3xl text-teal-400 mb-4 group-hover:scale-110 transition-transform"></i>
+              <div class="flex gap-3">
+                <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion/tree/main/Quran%20Reminder#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-book text-white"></i></a>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">Quran Reminder Ext.</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              A Chrome extension that shows random Quran verses when you click. Supports 3 languages (Arabic, Urdu, English) with a nice dark theme.
+            </p>
+            <div class="flex gap-2">
+              <span class="text-xs font-bold text-teal-500">#Chrome</span>
+              <span class="text-xs font-bold text-teal-500">#Extension</span>
+              <span class="text-xs font-bold text-teal-500">#V3</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative border-t border-white/10 bg-dark-900 pt-16 pb-8 overflow-hidden">
+    <!-- Glow effect in footer -->
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-500/20 rounded-full blur-[100px]"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-bold text-white mb-2">Let's Work Together</h2>
+          <p class="text-slate-400">Open for jobs and project collaborations.</p>
+        </div>
+        <div class="flex gap-4">
+          <a href="https://www.linkedin.com/in/ali-tahir-766219335" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-cyan-500/20">
+            <i class="fab fa-linkedin-in text-lg"></i>
+          </a>
+          <a href="https://github.com/Ali1180-uni" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-purple-500 hover:border-purple-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-purple-500/20">
+            <i class="fab fa-github text-lg"></i>
+          </a>
+          <a href="mailto:alirehmani673@outlook.com" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-pink-500 hover:border-pink-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-pink-500/20">
+            <i class="fas fa-envelope text-lg"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+        <p>&copy; 2025 Ali Tahir. All rights reserved.</p>
+        <p>Designed with <span class="text-red-500">♥</span> & Code.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Logic -->
+  <script>
+    // Mobile Menu
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    // Scroll Reveal Animation using Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    // Navbar Blur Effect on Scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 20) {
+        nav.classList.add('shadow-lg');
+        nav.classList.replace('bg-transparent', 'bg-dark-900/80');
+      } else {
+        nav.classList.remove('shadow-lg');
+        nav.classList.replace('bg-dark-900/80', 'bg-transparent');
+      }
+    });
+  </script>
 </body>
+
 </html>
