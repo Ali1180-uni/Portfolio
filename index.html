@@ -1,523 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-  <!-- Meta tags for character encoding and responsive design -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Tahir | Creative Full Stack Engineer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Page title for browser tab -->
-  <title>Ali Tahir - C++ & MERN Developer Portfolio</title>
+    <!-- Custom Configuration -->
+    <script src="script.js"></script>
 
-  <!-- Favicon - Modern code icon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512' fill='%233b82f6'><path d='M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z'/></svg>" type="image/svg+xml">
-
-  <!-- External CSS libraries -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS file -->
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <!-- NAVIGATION BAR -->
-  <!-- Fixed navigation bar with responsive mobile menu -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <!-- Brand/Logo section -->
-      <div class="logo">Ali Tahir</div>
+<body class="text-slate-300 font-sans antialiased selection:bg-pink-500 selection:text-white">
 
-      <!-- Desktop navigation links -->
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-      </ul>
-
-      <!-- Mobile menu hamburger button -->
-      <div class="mobile-menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
+    <!-- The Living Background -->
+    <div class="aurora-bg">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+        <div class="aurora-blob blob-3"></div>
     </div>
-  </nav>
 
-  <!-- HERO/LANDING SECTION -->
-  <!-- Main landing section with introduction and profile image -->
-  <section id="home" class="hero">
-    <div class="hero-container">
-      <!-- Left side - Text content -->
-      <div class="hero-content">
-        <!-- Main heading with gradient text effect -->
-        <h1>
-          Hi, I'm <span class="hero-title-gradient">Ali Tahir</span>
-        </h1>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 glass-panel border-b-0" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold tracking-tight text-white group">
+                    Ali<span class="text-cyan-400 group-hover:animate-pulse">.</span>Dev
+                </a>
 
-        <!-- Professional title -->
-        <p class="hero-subtitle">C++ & MERN Stack Developer</p>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
+                        About
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#toolkit" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
+                        Toolkit
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
+                    </a>
+                    <a href="#projects" class="text-sm font-medium hover:text-cyan-400 transition-colors relative group">
+                        Projects
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all group-hover:w-full"></span>
+                    </a>
+                </div>
 
-        <!-- Brief description -->
-        <p class="hero-description">
-          Aspiring Software Engineer currently pursuing a degree in Software Engineering, with 1.5+ years of hands-on experience in C++, Web Development, and Database Management. Enjoys turning ideas into functional projects with clean code and a focus on user experience.
-        </p>
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="mailto:alirehmani673@outlook.com" class="relative inline-flex group">
+                        <div class="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-full blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                        <button class="relative inline-flex items-center justify-center px-6 py-2 text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                            Let's Talk
+                        </button>
+                    </a>
+                </div>
 
-        <!-- Call-to-action buttons -->
-        <div class="hero-buttons">
-          <a href="#projects" class="btn-primary">
-            <i class="fas fa-briefcase"></i>
-            View My Work
-          </a>
-          <a href="#about" class="btn-secondary">
-            <i class="fas fa-user"></i>
-            About Me
-          </a>
-        </div>
-      </div>
-
-      <!-- Right side - Profile image and social links -->
-      <div class="hero-image">
-        <!-- Profile picture with styling -->
-        <div class="profile-image">
-          <img src="pin.jpg.png" alt="Ali Tahir - C++ & MERN Developer" />
-        </div>
-
-        <!-- Social media links -->
-        <div class="social-links-hero">
-          <a href="https://www.linkedin.com/in/ali-tahir-766219335" title="LinkedIn" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/Ali1180-uni" title="GitHub" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="mailto:alirehmani673@outlook.com" title="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT SECTION -->
-  <!-- Personal information and statistics -->
-  <section id="about" class="section">
-    <!-- Section header -->
-    <h2 class="section-title"><span>About Me</span></h2>
-    <p class="section-subtitle">Building a Strong Foundation in Software Development</p>
-
-    <div class="about-content">
-      <!-- About text description -->
-      <div class="about-text">
-        <h3>My Journey</h3>
-        <p>
-          I’m a Software Engineering student at National Textile University with over 1.5 years of hands-on experience in programming and web development. I enjoy working on both front-end and back-end projects, from C++ console applications to modern web platforms. My focus is on writing clean, efficient code and creating practical solutions to real-world problems.
-        </p>
-      </div>
-
-      <!-- Statistics counter section -->
-      <div class="about-stats">
-        <!-- Years of experience counter -->
-        <div class="stat-item" data-target="1.5">
-          <span class="stat-number">0</span>
-          <div class="stat-label">Years Experience</div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white focus:outline-none" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
         </div>
 
-        <!-- Technologies learned counter -->
-        <div class="stat-item" data-target="5">
-          <span class="stat-number">0</span>
-          <div class="stat-label">Technologies</div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-dark-900/95 backdrop-blur-xl border-t border-white/10" id="mobile-menu">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#about" class="block text-base font-medium text-white hover:text-cyan-400">About</a>
+                <a href="#toolkit" class="block text-base font-medium text-white hover:text-cyan-400">Toolkit</a>
+                <a href="#projects" class="block text-base font-medium text-white hover:text-cyan-400">Projects</a>
+            </div>
         </div>
+    </nav>
 
-        <!-- Projects completed counter -->
-        <div class="stat-item" data-target="5">
-          <span class="stat-number">0</span>
-          <div class="stat-label">Projects Built</div>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="home">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="order-2 lg:order-1 reveal active">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-sm font-medium mb-8 backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 mr-2 animate-pulse"></span>
+                        Open to Opportunities
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                        Coding with <br>
+                        <span class="text-gradient">Passion & Precision.</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 mb-8 max-w-lg leading-relaxed font-light">
+                        Hi, I'm <strong class="text-white">Ali Tahir</strong>. I've 1.5+ years of hands-on experience in C++, Web Development, and Database Management. Enjoys turning ideas into functional projects with clean code and a focus on user experience <span class="text-cyan-400 italic">wow</span>.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#projects" class="px-8 py-3.5 bg-white text-dark-900 font-bold rounded-full hover:bg-cyan-50 hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+                            Explore My Work
+                        </a>
+                        <a href="https://github.com/Ali1180-uni" target="_blank" class="px-8 py-3.5 border border-white/20 hover:border-white/50 hover:bg-white/10 text-white font-medium rounded-full transition-all duration-300 flex items-center gap-2 backdrop-blur-sm">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Visual -->
+                <div class="order-1 lg:order-2 flex justify-center reveal delay-200">
+                    <div class="relative w-72 h-72 lg:w-96 lg:h-96 animate-float">
+                        <!-- Decorative spinning rings -->
+                        <div class="absolute inset-0 border-2 border-cyan-500/30 rounded-full animate-spin-slow" style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;"></div>
+                        <div class="absolute inset-4 border-2 border-purple-500/30 rounded-full animate-spin-slow" style="animation-direction: reverse; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;"></div>
+                        
+                        <!-- Image Container -->
+                        <div class="absolute inset-8 rounded-full overflow-hidden shadow-2xl shadow-cyan-500/20 border-4 border-white/10 glass-panel">
+                            <img src="pic.png" onerror="this.src='https://ui-avatars.com/api/?name=Ali+Tahir&background=0f172a&color=fff&size=512'" alt="Ali Tahir" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Coding hours counter -->
-        <div class="stat-item" data-target="100">
-          <span class="stat-number">0</span>
-          <div class="stat-label">Hours Coding</div>
+    <!-- About Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center reveal">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-8">Behind the Code</h2>
+            <div class="glass-panel p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                <!-- Decor -->
+                <div class="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                
+                <p class="text-slate-300 text-lg leading-relaxed mb-0 relative z-10">
+                    I’m a Software Engineering student at National Textile University with over <span class="text-cyan-400 font-semibold">1.5 years</span> of hands-on experience. I don't just write code; I craft solutions. Whether it's optimizing a C++ algorithm for speed or designing a responsive MERN dashboard, I aim for that perfect balance of <span class="text-purple-400 font-semibold">efficiency</span> and <span class="text-pink-400 font-semibold">aesthetics</span>.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-2">1.5+</div>
+                    <div class="text-sm text-slate-400">Years Exp.</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 mb-2">8+</div>
+                    <div class="text-sm text-slate-400">Projects</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 mb-2">15+</div>
+                    <div class="text-sm text-slate-400">Tech Stack</div>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl text-center group hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500 mb-2">100+</div>
+                    <div class="text-sm text-slate-400">Hours Coding</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SKILLS SECTION -->
-  <!-- Technical skills and expertise areas -->
-  <section id="skills" class="section">
-    <!-- Section header -->
-    <h2 class="section-title"><span>Skills & Expertise</span></h2>
-    <p class="section-subtitle">Technologies and tools I work with</p>
+    <!-- Toolkit Section -->
+    <section id="toolkit" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">My Arsenal</h2>
+                <p class="text-slate-400">Tools I use to bring ideas to life.</p>
+            </div>
 
-    <!-- Skills grid container -->
-    <div class="skills-container">
-      <!-- Programming Languages skill category -->
-      <div class="skill-category">
-        <h3><i class="fas fa-code"></i> Programming Languages</h3>
-        <p><strong>C++:</strong> Data structures, algorithms, and high-performance problem solving.</p>
-        <br>
-        <p><strong>C#:</strong> Desktop application development with WinForms and MSSQL.</p>
-        <br>
-        <p><strong>Python:</strong> Scripting and Automation.</p>
-      </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="glass-panel p-8 rounded-3xl reveal hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.2)]">
+                        <i class="fas fa-layer-group text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-6">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">React.js</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">EJS</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Bootstrap</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Quill.js</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">HTML/CSS</span>
+                    </div>
+                </div>
 
-      <!-- Web Development skill category -->
-      <div class="skill-category">
-        <h3><i class="fas fa-globe"></i> Web Development</h3>
-        <p><strong>Frontend:</strong> HTML, CSS (Bootstrap), JavaScript for responsive and user-friendly interfaces.</p>
-        <br>
-        <p><strong>Backend:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js) for scalable full-stack applications.</p>
-      </div>
+                <!-- Backend -->
+                <div class="glass-panel p-8 rounded-3xl reveal delay-100 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 text-green-400 shadow-[0_0_15px_rgba(34,197,94,0.2)]">
+                        <i class="fas fa-server text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-6">Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Node.js</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Express</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Socket.io</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Passport.js</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">REST API</span>
+                    </div>
+                </div>
 
-      <!-- Database Management skill category -->
-      <div class="skill-category">
-        <h3><i class="fas fa-database"></i> Database Management</h3>
-        <p><strong>SQL:</strong> MSSQL for structured, relational data management.</p>
-        <br>
-        <p><strong>NoSQL:</strong> MongoDB for flexible, document-oriented data handling.</p>
-      </div>
-
-      <!-- Development Tools skill category -->
-      <div class="skill-category">
-        <h3><i class="fas fa-tools"></i> Development Tools</h3>
-        <p><strong>Version Control:</strong> Git & GitHub for collaborative development and version control.</p>
-        <br>
-        <p><strong>Terminal:</strong> Command-line proficiency for efficient workflow.</p>
-        <br>
-        <p><strong>Arduino:</strong> Hardware-sensor projects with real-world applications.</p>
-      </div>
-
-      <!-- API Development skill category -->
-      <div class="skill-category">
-        <h3><i class="fas fa-server"></i> API Development</h3>
-        <p>Skilled in designing and consuming REST APIs, ensuring seamless communication between different software components. This expertise is crucial for building modern, interconnected applications.</p>
-      </div>
-
-      <!-- Continuous Learning skill category -->
-      <div class="skill-category">
-        <h3><i class="fas fa-brain"></i> Continuous Learning</h3>
-        <p>Continuously learning and evolving, actively improving full-stack development skills. Exploring advanced areas such as artificial intelligence, with plans for hands-on work in the near future.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS SECTION -->
-  <!-- Showcase of completed projects -->
-  <section id="projects" class="section">
-    <!-- Section header -->
-    <h2 class="section-title"><span>Featured Projects</span></h2>
-    <p class="section-subtitle">A showcase of my development journey across different technologies</p>
-
-    <!-- Projects grid container -->
-    <div class="projects-container">
-      <!-- Project 1: Ali's Quran Site -->
-      <div class="project-card">
-        <div class="project-content">
-          <!-- Custom Project Icon -->
-          <div class="project-icon">
-            <i class="fas fa-book-quran"></i>
-          </div>
-          
-          <!-- Project title -->
-          <h3>Ali's Quran Site</h3>
-
-          <!-- Project description -->
-          <p>A comprehensive Quran verse finder web application that allows users to search for any verse by entering Surah and Ayah number. Features Arabic text display, audio recitation (Alafasy reciter), Urdu and English translations, and modern responsive design with smooth animations.</p>
-
-          <!-- Technology stack used -->
-          <div class="tech-stack">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">API Integration</span>
-          </div>
-
-          <!-- Project links -->
-          <div class="project-links">
-            <a href="https://github.com/Ali1180-uni/Ali-s-Quran-Site.git" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-            <a href="https://ali1180-uni.github.io/Ali-s-Quran-Site/" class="project-link" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-              Live Demo
-            </a>
-          </div>
+                <!-- Core & DevOps -->
+                <div class="glass-panel p-8 rounded-3xl reveal delay-200 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 text-purple-400 shadow-[0_0_15px_rgba(168,85,247,0.2)]">
+                        <i class="fas fa-cube text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-6">Core & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">C++</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Docker</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">MongoDB</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">SQL</span>
+                        <span class="px-3 py-1 bg-white/5 rounded-lg text-xs font-semibold text-slate-300 border border-white/10">Git</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Project 2: C++ Games Collection -->
-      <div class="project-card">
-        <div class="project-content">
-          <!-- Custom Project Icon -->
-          <div class="project-icon">
-            <i class="fas fa-gamepad"></i>
-          </div>
-          
-          <!-- Project title -->
-          <h3>C++ Games Collection</h3>
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Featured Projects</h2>
+                <p class="text-slate-400">Innovation in every repository.</p>
+            </div>
 
-          <!-- Project description -->
-          <p>A comprehensive collection of console-based games developed in C++ showcasing Object-Oriented Programming concepts. Features multiple interactive games including Word Scramble, Sequence Sort, and more with scoring systems, file I/O operations, and animated interfaces.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project: Mini Chat (NEW) -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-cyan-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-cyan-400 to-blue-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-comments text-3xl text-cyan-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Ali1180-uni/Mini-Chat-web-Application.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Real-Time Chat App</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            A high-performance messaging platform engineered with <span class="text-white">Socket.io</span> for instant bi-directional communication. Features a reactive React frontend and a robust Node.js backend.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-cyan-500">#Socket.io</span>
+                            <span class="text-xs font-bold text-cyan-500">#React</span>
+                            <span class="text-xs font-bold text-cyan-500">#Node</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Technology stack used -->
-          <div class="tech-stack">
-            <span class="tech-tag">C++</span>
-            <span class="tech-tag">OOP</span>
-            <span class="tech-tag">File I/O</span>
-            <span class="tech-tag">Console Games</span>
-          </div>
+                <!-- Project: Github Crawler (NEW) -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-blue-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-file-word text-3xl text-blue-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Ali1180-uni/Github-to-docx.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">GitHub to Docx Automation</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            A smart Python crawler that recursively scans GitHub repositories to collect C++ files and auto-generates formatted Word reports. A lifesaver for student lab reports.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-blue-500">#Python</span>
+                            <span class="text-xs font-bold text-blue-500">#Automation</span>
+                            <span class="text-xs font-bold text-blue-500">#Crawler</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Project links -->
-          <div class="project-links">
-            <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-            <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git#readme" class="project-link" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-              Documentation
-            </a>
-          </div>
+                <!-- Project: Ali's Quran Site -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-emerald-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-emerald-400 to-green-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-book-quran text-3xl text-emerald-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Ali1180-uni/Ali-s-Quran-Site.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                                <a href="https://ali1180-uni.github.io/Ali-s-Quran-Site/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">Ali's Quran Site</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            A comprehensive verse finder app with audio recitation, translations, and beautiful Arabic typography. Built with vanilla JS and external APIs.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-emerald-500">#API</span>
+                            <span class="text-xs font-bold text-emerald-500">#JS</span>
+                            <span class="text-xs font-bold text-emerald-500">#Audio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: C++ Games -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-purple-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-purple-400 to-pink-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-gamepad text-3xl text-purple-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                                <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">C++ Games Collection</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            A suite of console-based games (Word Scramble, Sequence Sort) demonstrating advanced OOP concepts and efficient memory management in C++.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-purple-500">#C++</span>
+                            <span class="text-xs font-bold text-purple-500">#OOP</span>
+                            <span class="text-xs font-bold text-purple-500">#Logic</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project: Simon Game (Restored) -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-yellow-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-yellow-400 to-orange-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-brain text-3xl text-yellow-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Ali1180-uni/Simon-Game-By-Ali.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                                <a href="http://ali1180-uni.github.io/Simon-Game-By-Ali/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">Simon Game</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            A classic Simon memory game built with vanilla JavaScript. Features progressive difficulty, high score tracking, smooth DOM animations, and engaging sound effects.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-yellow-500">#DOM</span>
+                            <span class="text-xs font-bold text-yellow-500">#JS</span>
+                            <span class="text-xs font-bold text-yellow-500">#Game</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Pharmacy -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-red-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-red-400 to-orange-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-capsules text-3xl text-red-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-download text-white"></i></a>
+                                <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-external-link-alt text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-red-400 transition-colors">Pharmacy Manager</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Desktop application for inventory and sales tracking. Built with C#, WinForms and MySQL, featuring robust CRUD operations and reporting.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-red-500">#C#</span>
+                            <span class="text-xs font-bold text-red-500">#MySQL</span>
+                            <span class="text-xs font-bold text-red-500">#Desktop</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project: University Info (Restored) -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-indigo-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-indigo-400 to-purple-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-graduation-cap text-3xl text-indigo-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Ali1180-uni/University-info.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                                <a href="https://github.com/Ali1180-uni/University-info.git#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-book text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">University Info Search</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            A sleek web app for searching universities worldwide using the Hipolabs API. Features live search, modern UI animations, and Axios integration.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-indigo-500">#Bootstrap</span>
+                            <span class="text-xs font-bold text-indigo-500">#Axios</span>
+                            <span class="text-xs font-bold text-indigo-500">#API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Chrome Ext -->
+                <div class="glass-panel rounded-2xl overflow-hidden group hover:border-teal-500/50 transition-all duration-500 reveal">
+                    <div class="h-2 bg-gradient-to-r from-teal-400 to-emerald-500"></div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <i class="fas fa-puzzle-piece text-3xl text-teal-400 mb-4 group-hover:scale-110 transition-transform"></i>
+                            <div class="flex gap-3">
+                                <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion.git" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fab fa-github text-white"></i></a>
+                                <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion/tree/main/Quran%20Reminder#readme" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/20 transition-colors"><i class="fas fa-book text-white"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">Quran Reminder Ext.</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            A Chrome extension delivering random verses on click. Features trilingual support (Arabic, Urdu, English) and an elegant dark mode UI.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="text-xs font-bold text-teal-500">#Chrome</span>
+                            <span class="text-xs font-bold text-teal-500">#Extension</span>
+                            <span class="text-xs font-bold text-teal-500">#V3</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Project 3: Simon Game -->
-      <div class="project-card">
-        <div class="project-content">
-          <!-- Custom Project Icon -->
-          <div class="project-icon">
-            <i class="fas fa-brain"></i>
-          </div>
-          
-          <!-- Project title -->
-          <h3>Simon Game - JavaScript DOM Practice</h3>
-
-          <!-- Project description -->
-          <p>A classic Simon memory game built with vanilla JavaScript to practice DOM manipulation and event handling. Features progressive difficulty, high score tracking, smooth animations, responsive design, and engaging sound effects for an interactive gaming experience.</p>
-
-          <!-- Technology stack used -->
-          <div class="tech-stack">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">DOM Manipulation</span>
-          </div>
-
-          <!-- Project links -->
-          <div class="project-links">
-            <a href="https://github.com/Ali1180-uni/Simon-Game-By-Ali.git" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-            <a href="http://ali1180-uni.github.io/Simon-Game-By-Ali/" class="project-link" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-              Live Demo
-            </a>
-          </div>
+    <!-- Footer -->
+    <footer class="relative border-t border-white/10 bg-dark-900 pt-16 pb-8 overflow-hidden">
+        <!-- Glow effect in footer -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-purple-500/20 rounded-full blur-[100px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+                <div class="text-center md:text-left">
+                    <h2 class="text-2xl font-bold text-white mb-2">Let's build something epic.</h2>
+                    <p class="text-slate-400">Available for hire and open source collaborations.</p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://www.linkedin.com/in/ali-tahir-766219335" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-cyan-500 hover:border-cyan-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-cyan-500/20">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </a>
+                    <a href="https://github.com/Ali1180-uni" target="_blank" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-purple-500 hover:border-purple-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-purple-500/20">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="mailto:alirehmani673@outlook.com" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-pink-500 hover:border-pink-500 transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-pink-500/20">
+                        <i class="fas fa-envelope text-lg"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <p>&copy; 2025 Ali Tahir. All rights reserved.</p>
+                <p>Designed with <span class="text-red-500">♥</span> & Code.</p>
+            </div>
         </div>
-      </div>
+    </footer>
 
-      <!-- Project 4: Pharmacy Management System -->
-      <div class="project-card">
-        <div class="project-content">
-          <!-- Custom Project Icon -->
-          <div class="project-icon">
-            <i class="fas fa-pills"></i>
-          </div>
-          
-          <!-- Project title -->
-          <h3>Pharmacy Management System</h3>
+    <!-- Logic -->
+    <script>
+        // Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
 
-          <!-- Project description -->
-          <p>A comprehensive C# desktop application built with WinForms and MySQL database for pharmacy management. Features advanced OOP concepts, inventory management, sales tracking, user authentication, and modern UI design with complete CRUD operations and reporting system.</p>
+        // Scroll Reveal Animation using Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
 
-          <!-- Technology stack used -->
-          <div class="tech-stack">
-            <span class="tech-tag">C#</span>
-            <span class="tech-tag">WinForms</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">.NET Framework</span>
-          </div>
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-          <!-- Project links -->
-          <div class="project-links">
-            <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" class="project-link" target="_blank">
-              <i class="fas fa-download"></i>
-              Download Project
-            </a>
-            <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" class="project-link" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-              View Project
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5: University Info Search -->
-      <div class="project-card">
-        <div class="project-content">
-          <!-- Custom Project Icon -->
-          <div class="project-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          
-          <!-- Project title -->
-          <h3>University Info Search</h3>
-
-          <!-- Project description -->
-          <p>A sleek, responsive web application for searching universities worldwide using the Hipolabs Universities API. Features live search functionality, modern UI with smooth animations, Bootstrap-powered loading spinner, and responsive design that works across all devices.</p>
-
-          <!-- Technology stack used -->
-          <div class="tech-stack">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap 5</span>
-            <span class="tech-tag">Axios</span>
-            <span class="tech-tag">API Integration</span>
-          </div>
-
-          <!-- Project links -->
-          <div class="project-links">
-            <a href="https://github.com/Ali1180-uni/University-info.git" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-            <a href="https://github.com/Ali1180-uni/University-info.git#readme" class="project-link" target="_blank">
-              <i class="fas fa-book"></i>
-              Documentation
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6: Quran Reminder Chrome Extension -->
-      <div class="project-card">
-        <div class="project-content">
-          <!-- Custom Project Icon -->
-          <div class="project-icon">
-            <i class="fas fa-puzzle-piece"></i>
-          </div>
-          
-          <!-- Project title -->
-          <h3>Quran Reminder - Chrome Extension</h3>
-
-          <!-- Project description -->
-          <p>A beautiful Chrome extension that displays a random Quran verse every time you click the extension icon. Features trilingual display with Arabic, Urdu, and English translations, accurate ayah counts for all 114 Surahs, elegant dark theme with golden accents, and beautiful fonts including Amiri Quran for Arabic calligraphy.</p>
-
-          <!-- Technology stack used -->
-          <div class="tech-stack">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Chrome Extension</span>
-            <span class="tech-tag">Manifest V3</span>
-            <span class="tech-tag">API Integration</span>
-          </div>
-
-          <!-- Project links -->
-          <div class="project-links">
-            <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion.git" class="project-link" target="_blank">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-            <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion/tree/main/Quran%20Reminder#readme" class="project-link" target="_blank">
-              <i class="fas fa-book"></i>
-              Documentation
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION SECTION -->
-  <!-- Academic background and timeline -->
-  <section id="education" class="section">
-    <!-- Section header -->
-    <h2 class="section-title"><span>Education & Timeline</span></h2>
-    <p class="section-subtitle">My academic journey and achievements</p>
-
-    <!-- Education timeline container -->
-    <div class="education-timeline">
-      <!-- Current university education -->
-      <div class="education-item">
-        <div class="education-content">
-          <h3>National Textile University</h3>
-          <div class="education-degree">Bachelor of Software Engineering</div>
-          <div class="education-date">2024 - Present</div>
-        </div>
-        <div class="education-dot"></div>
-      </div>
-
-      <!-- College education -->
-      <div class="education-item">
-        <div class="education-content">
-          <h3>Kips College</h3>
-          <div class="education-degree">Intermediate in Computer Science</div>
-          <div class="education-date">2022 - 2024</div>
-        </div>
-        <div class="education-dot"></div>
-      </div>
-
-      <!-- High school education -->
-      <div class="education-item">
-        <div class="education-content">
-          <h3>Superior Science High School</h3>
-          <div class="education-degree">Matriculation in Computer Science</div>
-          <div class="education-date">2020 - 2022</div>
-        </div>
-        <div class="education-dot"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FUTURE GOALS SECTION -->
-  <!-- Professional aspirations and vision -->
-  <section class="section">
-    <!-- Section header -->
-    <h2 class="section-title"><span>Future Goals</span></h2>
-    <p class="section-subtitle">Where I see myself in the coming years</p>
-
-    <!-- Goals content container -->
-    <div class="goals-container">
-      <!-- Inspirational quote about future goals -->
-      <div class="goals-quote">
-        "I aspire to become a full-stack developer who can build scalable, user-friendly applications that solve real-world problems. My goal is to contribute to innovative projects and continuously learn emerging technologies while maintaining high code quality and best practices."
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER SECTION -->
-  <!-- Website footer with copyright and social links -->
-  <footer class="footer">
-    <div class="footer-content">
-      <!-- Copyright and tech stack information -->
-      <div class="footer-text">
-        <p>&copy; 2024 Ali Tahir. All rights reserved.</p>
-        <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
-      </div>
-
-      <!-- Footer social media links -->
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/ali-tahir-766219335" target="_blank" title="Connect on LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/Ali1180-uni" target="_blank" title="View GitHub Profile">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:alirehmani673@outlook.com" title="Send Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript file for interactive functionality -->
-  <script src="script.js"></script>
+        // Navbar Blur Effect on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-lg');
+                nav.classList.replace('bg-transparent', 'bg-dark-900/80');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.replace('bg-dark-900/80', 'bg-transparent');
+            }
+        });
+    </script>
 </body>
-
 </html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character encoding and responsive design -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title for browser tab -->
+  <title>Ali Tahir - C++ & MERN Developer Portfolio</title>
+
+  <!-- Favicon - Modern code icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 512' fill='%233b82f6'><path d='M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z'/></svg>" type="image/svg+xml">
+
+  <!-- External CSS libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <!-- Fixed navigation bar with responsive mobile menu -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Brand/Logo section -->
+      <div class="logo">Ali Tahir</div>
+
+      <!-- Desktop navigation links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+
+      <!-- Mobile menu hamburger button -->
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO/LANDING SECTION -->
+  <!-- Main landing section with introduction and profile image -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <!-- Left side - Text content -->
+      <div class="hero-content">
+        <!-- Main heading with gradient text effect -->
+        <h1>
+          Hi, I'm <span class="hero-title-gradient">Ali Tahir</span>
+        </h1>
+
+        <!-- Professional title -->
+        <p class="hero-subtitle">C++ & MERN Stack Developer</p>
+
+        <!-- Brief description -->
+        <p class="hero-description">
+          Aspiring Software Engineer currently pursuing a degree in Software Engineering, with 1.5+ years of hands-on experience in C++, Web Development, and Database Management. Enjoys turning ideas into functional projects with clean code and a focus on user experience.
+        </p>
+
+        <!-- Call-to-action buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-briefcase"></i>
+            View My Work
+          </a>
+          <a href="#about" class="btn-secondary">
+            <i class="fas fa-user"></i>
+            About Me
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side - Profile image and social links -->
+      <div class="hero-image">
+        <!-- Profile picture with styling -->
+        <div class="profile-image">
+          <img src="pin.jpg.png" alt="Ali Tahir - C++ & MERN Developer" />
+        </div>
+
+        <!-- Social media links -->
+        <div class="social-links-hero">
+          <a href="https://www.linkedin.com/in/ali-tahir-766219335" title="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Ali1180-uni" title="GitHub" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:alirehmani673@outlook.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <!-- Personal information and statistics -->
+  <section id="about" class="section">
+    <!-- Section header -->
+    <h2 class="section-title"><span>About Me</span></h2>
+    <p class="section-subtitle">Building a Strong Foundation in Software Development</p>
+
+    <div class="about-content">
+      <!-- About text description -->
+      <div class="about-text">
+        <h3>My Journey</h3>
+        <p>
+          I’m a Software Engineering student at National Textile University with over 1.5 years of hands-on experience in programming and web development. I enjoy working on both front-end and back-end projects, from C++ console applications to modern web platforms. My focus is on writing clean, efficient code and creating practical solutions to real-world problems.
+        </p>
+      </div>
+
+      <!-- Statistics counter section -->
+      <div class="about-stats">
+        <!-- Years of experience counter -->
+        <div class="stat-item" data-target="1.5">
+          <span class="stat-number">0</span>
+          <div class="stat-label">Years Experience</div>
+        </div>
+
+        <!-- Technologies learned counter -->
+        <div class="stat-item" data-target="5">
+          <span class="stat-number">0</span>
+          <div class="stat-label">Technologies</div>
+        </div>
+
+        <!-- Projects completed counter -->
+        <div class="stat-item" data-target="5">
+          <span class="stat-number">0</span>
+          <div class="stat-label">Projects Built</div>
+        </div>
+
+        <!-- Coding hours counter -->
+        <div class="stat-item" data-target="100">
+          <span class="stat-number">0</span>
+          <div class="stat-label">Hours Coding</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <!-- Technical skills and expertise areas -->
+  <section id="skills" class="section">
+    <!-- Section header -->
+    <h2 class="section-title"><span>Skills & Expertise</span></h2>
+    <p class="section-subtitle">Technologies and tools I work with</p>
+
+    <!-- Skills grid container -->
+    <div class="skills-container">
+      <!-- Programming Languages skill category -->
+      <div class="skill-category">
+        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+        <p><strong>C++:</strong> Data structures, algorithms, and high-performance problem solving.</p>
+        <br>
+        <p><strong>C#:</strong> Desktop application development with WinForms and MSSQL.</p>
+        <br>
+        <p><strong>Python:</strong> Scripting and Automation.</p>
+      </div>
+
+      <!-- Web Development skill category -->
+      <div class="skill-category">
+        <h3><i class="fas fa-globe"></i> Web Development</h3>
+        <p><strong>Frontend:</strong> HTML, CSS (Bootstrap), JavaScript for responsive and user-friendly interfaces.</p>
+        <br>
+        <p><strong>Backend:</strong> MERN Stack (MongoDB, Express.js, React.js, Node.js) for scalable full-stack applications.</p>
+      </div>
+
+      <!-- Database Management skill category -->
+      <div class="skill-category">
+        <h3><i class="fas fa-database"></i> Database Management</h3>
+        <p><strong>SQL:</strong> MSSQL for structured, relational data management.</p>
+        <br>
+        <p><strong>NoSQL:</strong> MongoDB for flexible, document-oriented data handling.</p>
+      </div>
+
+      <!-- Development Tools skill category -->
+      <div class="skill-category">
+        <h3><i class="fas fa-tools"></i> Development Tools</h3>
+        <p><strong>Version Control:</strong> Git & GitHub for collaborative development and version control.</p>
+        <br>
+        <p><strong>Terminal:</strong> Command-line proficiency for efficient workflow.</p>
+        <br>
+        <p><strong>Arduino:</strong> Hardware-sensor projects with real-world applications.</p>
+      </div>
+
+      <!-- API Development skill category -->
+      <div class="skill-category">
+        <h3><i class="fas fa-server"></i> API Development</h3>
+        <p>Skilled in designing and consuming REST APIs, ensuring seamless communication between different software components. This expertise is crucial for building modern, interconnected applications.</p>
+      </div>
+
+      <!-- Continuous Learning skill category -->
+      <div class="skill-category">
+        <h3><i class="fas fa-brain"></i> Continuous Learning</h3>
+        <p>Continuously learning and evolving, actively improving full-stack development skills. Exploring advanced areas such as artificial intelligence, with plans for hands-on work in the near future.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <!-- Showcase of completed projects -->
+  <section id="projects" class="section">
+    <!-- Section header -->
+    <h2 class="section-title"><span>Featured Projects</span></h2>
+    <p class="section-subtitle">A showcase of my development journey across different technologies</p>
+
+    <!-- Projects grid container -->
+    <div class="projects-container">
+      <!-- Project 1: Ali's Quran Site -->
+      <div class="project-card">
+        <div class="project-content">
+          <!-- Custom Project Icon -->
+          <div class="project-icon">
+            <i class="fas fa-book-quran"></i>
+          </div>
+          
+          <!-- Project title -->
+          <h3>Ali's Quran Site</h3>
+
+          <!-- Project description -->
+          <p>A comprehensive Quran verse finder web application that allows users to search for any verse by entering Surah and Ayah number. Features Arabic text display, audio recitation (Alafasy reciter), Urdu and English translations, and modern responsive design with smooth animations.</p>
+
+          <!-- Technology stack used -->
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">API Integration</span>
+          </div>
+
+          <!-- Project links -->
+          <div class="project-links">
+            <a href="https://github.com/Ali1180-uni/Ali-s-Quran-Site.git" class="project-link" target="_blank">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+            <a href="https://ali1180-uni.github.io/Ali-s-Quran-Site/" class="project-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: C++ Games Collection -->
+      <div class="project-card">
+        <div class="project-content">
+          <!-- Custom Project Icon -->
+          <div class="project-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          
+          <!-- Project title -->
+          <h3>C++ Games Collection</h3>
+
+          <!-- Project description -->
+          <p>A comprehensive collection of console-based games developed in C++ showcasing Object-Oriented Programming concepts. Features multiple interactive games including Word Scramble, Sequence Sort, and more with scoring systems, file I/O operations, and animated interfaces.</p>
+
+          <!-- Technology stack used -->
+          <div class="tech-stack">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">OOP</span>
+            <span class="tech-tag">File I/O</span>
+            <span class="tech-tag">Console Games</span>
+          </div>
+
+          <!-- Project links -->
+          <div class="project-links">
+            <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git" class="project-link" target="_blank">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+            <a href="https://github.com/Ali1180-uni/C-Games-Final-Project.git#readme" class="project-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Simon Game -->
+      <div class="project-card">
+        <div class="project-content">
+          <!-- Custom Project Icon -->
+          <div class="project-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          
+          <!-- Project title -->
+          <h3>Simon Game - JavaScript DOM Practice</h3>
+
+          <!-- Project description -->
+          <p>A classic Simon memory game built with vanilla JavaScript to practice DOM manipulation and event handling. Features progressive difficulty, high score tracking, smooth animations, responsive design, and engaging sound effects for an interactive gaming experience.</p>
+
+          <!-- Technology stack used -->
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">DOM Manipulation</span>
+          </div>
+
+          <!-- Project links -->
+          <div class="project-links">
+            <a href="https://github.com/Ali1180-uni/Simon-Game-By-Ali.git" class="project-link" target="_blank">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+            <a href="http://ali1180-uni.github.io/Simon-Game-By-Ali/" class="project-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Pharmacy Management System -->
+      <div class="project-card">
+        <div class="project-content">
+          <!-- Custom Project Icon -->
+          <div class="project-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          
+          <!-- Project title -->
+          <h3>Pharmacy Management System</h3>
+
+          <!-- Project description -->
+          <p>A comprehensive C# desktop application built with WinForms and MySQL database for pharmacy management. Features advanced OOP concepts, inventory management, sales tracking, user authentication, and modern UI design with complete CRUD operations and reporting system.</p>
+
+          <!-- Technology stack used -->
+          <div class="tech-stack">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">WinForms</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">.NET Framework</span>
+          </div>
+
+          <!-- Project links -->
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" class="project-link" target="_blank">
+              <i class="fas fa-download"></i>
+              Download Project
+            </a>
+            <a href="https://drive.google.com/file/d/13Vu6mLVxNpakPkhIuIFyeHHx5t3iFphT/view?usp=sharing" class="project-link" target="_blank">
+              <i class="fas fa-external-link-alt"></i>
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: University Info Search -->
+      <div class="project-card">
+        <div class="project-content">
+          <!-- Custom Project Icon -->
+          <div class="project-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          
+          <!-- Project title -->
+          <h3>University Info Search</h3>
+
+          <!-- Project description -->
+          <p>A sleek, responsive web application for searching universities worldwide using the Hipolabs Universities API. Features live search functionality, modern UI with smooth animations, Bootstrap-powered loading spinner, and responsive design that works across all devices.</p>
+
+          <!-- Technology stack used -->
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap 5</span>
+            <span class="tech-tag">Axios</span>
+            <span class="tech-tag">API Integration</span>
+          </div>
+
+          <!-- Project links -->
+          <div class="project-links">
+            <a href="https://github.com/Ali1180-uni/University-info.git" class="project-link" target="_blank">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+            <a href="https://github.com/Ali1180-uni/University-info.git#readme" class="project-link" target="_blank">
+              <i class="fas fa-book"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Quran Reminder Chrome Extension -->
+      <div class="project-card">
+        <div class="project-content">
+          <!-- Custom Project Icon -->
+          <div class="project-icon">
+            <i class="fas fa-puzzle-piece"></i>
+          </div>
+          
+          <!-- Project title -->
+          <h3>Quran Reminder - Chrome Extension</h3>
+
+          <!-- Project description -->
+          <p>A beautiful Chrome extension that displays a random Quran verse every time you click the extension icon. Features trilingual display with Arabic, Urdu, and English translations, accurate ayah counts for all 114 Surahs, elegant dark theme with golden accents, and beautiful fonts including Amiri Quran for Arabic calligraphy.</p>
+
+          <!-- Technology stack used -->
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Chrome Extension</span>
+            <span class="tech-tag">Manifest V3</span>
+            <span class="tech-tag">API Integration</span>
+          </div>
+
+          <!-- Project links -->
+          <div class="project-links">
+            <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion.git" class="project-link" target="_blank">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+            <a href="https://github.com/Ali1180-uni/Quran-Chrome-Extenstion/tree/main/Quran%20Reminder#readme" class="project-link" target="_blank">
+              <i class="fas fa-book"></i>
+              Documentation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <!-- Academic background and timeline -->
+  <section id="education" class="section">
+    <!-- Section header -->
+    <h2 class="section-title"><span>Education & Timeline</span></h2>
+    <p class="section-subtitle">My academic journey and achievements</p>
+
+    <!-- Education timeline container -->
+    <div class="education-timeline">
+      <!-- Current university education -->
+      <div class="education-item">
+        <div class="education-content">
+          <h3>National Textile University</h3>
+          <div class="education-degree">Bachelor of Software Engineering</div>
+          <div class="education-date">2024 - Present</div>
+        </div>
+        <div class="education-dot"></div>
+      </div>
+
+      <!-- College education -->
+      <div class="education-item">
+        <div class="education-content">
+          <h3>Kips College</h3>
+          <div class="education-degree">Intermediate in Computer Science</div>
+          <div class="education-date">2022 - 2024</div>
+        </div>
+        <div class="education-dot"></div>
+      </div>
+
+      <!-- High school education -->
+      <div class="education-item">
+        <div class="education-content">
+          <h3>Superior Science High School</h3>
+          <div class="education-degree">Matriculation in Computer Science</div>
+          <div class="education-date">2020 - 2022</div>
+        </div>
+        <div class="education-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE GOALS SECTION -->
+  <!-- Professional aspirations and vision -->
+  <section class="section">
+    <!-- Section header -->
+    <h2 class="section-title"><span>Future Goals</span></h2>
+    <p class="section-subtitle">Where I see myself in the coming years</p>
+
+    <!-- Goals content container -->
+    <div class="goals-container">
+      <!-- Inspirational quote about future goals -->
+      <div class="goals-quote">
+        "I aspire to become a full-stack developer who can build scalable, user-friendly applications that solve real-world problems. My goal is to contribute to innovative projects and continuously learn emerging technologies while maintaining high code quality and best practices."
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <!-- Website footer with copyright and social links -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Copyright and tech stack information -->
+      <div class="footer-text">
+        <p>&copy; 2024 Ali Tahir. All rights reserved.</p>
+        <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+      </div>
+
+      <!-- Footer social media links -->
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/ali-tahir-766219335" target="_blank" title="Connect on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Ali1180-uni" target="_blank" title="View GitHub Profile">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:alirehmani673@outlook.com" title="Send Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript file for interactive functionality -->
+  <script src="script.js"></script>
+</body>
+
+</html>
